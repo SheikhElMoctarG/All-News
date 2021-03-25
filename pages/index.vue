@@ -25,7 +25,7 @@ export default {
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@500&display=swap');
+@import url('//fonts.googleapis.com/css2?family=Tajawal:wght@500&display=swap');
 .container {
   font-family: 'Tajawal', sans-serif;
   margin: 0 auto;
