@@ -2,7 +2,10 @@
   <div class="container">
     <div v-for="post in posts" :key="post.id" class="post">
       <h1>{{post.title}}</h1>
+      <div class="b">
+      <p>{{post.name}}</p>
       <p>{{$dayjs(post.isoDate).fromNow()}}</p>
+      </div>
     </div>
   </div>
 </template>
@@ -34,5 +37,8 @@ export default {
 }
 .post{
   margin: 10px;
+}
+.p{
+    display: flex;
 }
 </style>
