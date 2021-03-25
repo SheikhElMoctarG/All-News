@@ -3,7 +3,8 @@ export default {
   head: {
     title: 'all-news',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'ar',
+      dir: 'rtl'
     },
     meta: [
       { charset: 'utf-8' },
@@ -34,12 +35,37 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    '@nuxtjs/dayjs',
+       'nuxt-i18n',
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     '@nuxtjs/vuetify'
   ],
-
-  // Axios module configuration: https://go.nuxtjs.dev/config-axios
+  i18n: {
+    strategy: 'no_prefix',
+    locales: [
+      {
+        code: 'ar',
+        iso: 'ar',
+        file: 'ar.js',
+        name: 'العربية'
+      },
+    ],
+    vueI18n: {
+      fallbackLocale: 'ar'
+    },
+    defaultLocale: 'ar',
+    parsePages: false,
+    detectBrowserLanguage: false,
+    seo: false,
+    lazy: true,
+    langDir: 'lang/'
+  },
+  dayjs: {
+    locales: ['ar'],
+    defaultLocale: 'ar',
+    plugins: ['relativeTime', 'advancedFormat'],
+},
   axios: {},
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

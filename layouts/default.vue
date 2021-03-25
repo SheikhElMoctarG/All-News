@@ -1,20 +1,18 @@
 <template>
   <div>
-    <Nuxt />
+    <div class="header">
+      <v-banner>{{ $t('news_new') }}</v-banner>
+    </div>
+    <div class="content">
+      <Nuxt />
+    </div>
   </div>
 </template>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@500&display=swap');
 html {
-  font-family:
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
+  font-family: 'Tajawal', sans-serif;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
@@ -22,6 +20,9 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 *,
@@ -58,5 +59,13 @@ html {
 .button--grey:hover {
   color: #fff;
   background-color: #35495e;
+}
+.header{
+  width: 400px;
+  text-align: center;
+}
+.content{
+  width: 400px;
+
 }
 </style>
