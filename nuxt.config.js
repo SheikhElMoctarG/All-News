@@ -41,6 +41,8 @@ export default {
        'nuxt-i18n',
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+      // With options
+    ['@nuxtjs/vuetify', { /* module options */ }]
   ],
   i18n: {
     strategy: 'no_prefix',
