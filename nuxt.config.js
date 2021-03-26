@@ -20,12 +20,12 @@ export default {
       {
         hid: 'og:image',
         property: 'og:image',
-        content: './static/card.jpg'
+        content: 'https://d.top4top.io/p_1911e7ol70.jpg'
       },
       {
         hid: 'og:image:secure_url',
         property: 'og:image:secure_url',
-        content: './static/card.jpg'
+        content: 'https://d.top4top.io/p_1911e7ol70.jpg'
       },
       {
         hid: 'og:image:alt',
@@ -35,7 +35,7 @@ export default {
       {
         hid: 'twitter:image',
         name: 'twitter:image',
-        content: './static/card.jpg'
+        content: 'https://d.top4top.io/p_1911e7ol70.jpg'
       }
     ],
     link: [
