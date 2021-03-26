@@ -1,15 +1,42 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'all-news',
+    title: 'كل الأخبار - اخر الأخبار الموريتانية',
     htmlAttrs: {
       lang: 'ar',
       dir: 'rtl'
     },
     meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' }
+       { charset: 'utf-8' },
+      { name: 'theme-color', content: '#27ae60' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1' },
+      { hid: 'og:site_name', property: 'og:site_name', content: 'كل الأخبار' },
+      { hid: 'og:type', property: 'og:type', content: 'website' },
+      {
+        hid: 'twitter:card',
+        name: 'twitter:card',
+        content: 'summary_large_image'
+      },
+      {
+        hid: 'og:image',
+        property: 'og:image',
+        content: './static/card.jpg'
+      },
+      {
+        hid: 'og:image:secure_url',
+        property: 'og:image:secure_url',
+        content: './static/card.jpg'
+      },
+      {
+        hid: 'og:image:alt',
+        property: 'og:image:alt',
+        content: 'دليل مبرمج'
+      },
+      {
+        hid: 'twitter:image',
+        name: 'twitter:image',
+        content: './static/card.jpg'
+      }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
