@@ -75,7 +75,7 @@ export default {
     '@nuxtjs/axios',
   ],
   googleAnalytics: {
-    id: process.env.GOOGLE_ANALYTICS_ID || 'UA-266889953-1',
+    id: process.env.GOOGLE_ANALYTICS_ID || 'UA-193046179-2'
   },
   pwa: {
     manifest: {
