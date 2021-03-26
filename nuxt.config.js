@@ -58,7 +58,9 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
-    '@nuxtjs/vuetify'
+    '@nuxtjs/vuetify',
+    '@nuxtjs/pwa',
+    '@nuxtjs/google-analytics'
 
   ],
   vuetify: {
@@ -72,6 +74,21 @@ export default {
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
   ],
+  googleAnalytics: {
+    id: process.env.GOOGLE_ANALYTICS_ID || 'UA-266889953-1',
+  },
+  pwa: {
+    manifest: {
+      name: 'كل الأخبار'
+    },
+    meta: {
+      name: 'كل الأخبار',
+      description: 'أخر الأخبار الموريتانية، ومن اوثق المصادر في البلد',
+      theme_color: '#34495e',
+      lang: 'ar',
+      nativeUI: true,
+    }
+  },
   i18n: {
     strategy: 'no_prefix',
     locales: [

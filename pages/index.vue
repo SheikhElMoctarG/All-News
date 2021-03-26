@@ -3,11 +3,11 @@
     <div v-for="post in posts" :key="post.id" class="pos">
       <h1 class="title"><a :href="post.link" target="_blank" rel="noopener" style="text-decoration:none;"> {{post.title}} </a></h1>
       <div class="b">
-      <p v-if="post.name == 'alakhbar.info'">{{$t('sites.alakhbar')}}</p>
-      <p v-if="post.name == 'www.saharamedias.net'">{{$t('sites.saharamedias')}}</p>
-      <p v-if="post.name == 'tvm.mr'">{{$t('sites.tvm')}}</p>
-      <p v-if="post.name == 'www.bellewarmedia.com'">{{$t('sites.bellewarmedia')}}</p>
-      <p>{{$dayjs(post.isoDate).fromNow()}}</p>
+      <p v-if="post.name == 'alakhbar.info'">{{$t('sites.alakhbar')}} • </p>
+      <p v-if="post.name == 'www.saharamedias.net'">{{$t('sites.saharamedias')}} • </p>
+      <p v-if="post.name == 'tvm.mr'">{{$t('sites.tvm')}} • </p>
+      <p v-if="post.name == 'www.bellewarmedia.com'">{{$t('sites.bellewarmedia')}} • </p>
+      <p class="time">  {{$dayjs(post.isoDate).fromNow()}}  </p>
       </div>
     </div>
   </div>
@@ -46,10 +46,13 @@ a{
 .pos{
   margin: 10px;
 }
-.p{
+.b{
     display: flex;
-    align-items: center;
-    justify-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.time{
+  margin-right: 5px;
 }
 .title{
   text-decoration: none;
