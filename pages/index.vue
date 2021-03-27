@@ -23,11 +23,13 @@ export default {
   },
   methods: {
   },
-  beforeCreate () {
+  created () {
     axios.get('https://mersal-info.herokuapp.com/')
       .then((res) => {
         this.posts = res.data
       })
+  },
+  beforeMount () {
   }
 }
 </script>

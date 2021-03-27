@@ -2,6 +2,10 @@
   <div>
     <div class="header">
       <v-banner>{{ $t('news_new') }}</v-banner>
+      <div class="alert">
+        <img src="../static/icon-alert.svg" alt="">
+        <p> {{$t('alert')}} </p>
+      </div>
     </div>
     <div class="content">
       <Nuxt />
@@ -67,5 +71,23 @@ html {
 @font-face{
   font-family: 'Tajawal';
   src: url('../fonts/Tajawal.ttf') format('truetype');
+}
+.alert{
+  width: 400px;
+  height: 50px;
+  background-color: orange;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+.alert img{
+  width: 30px;
+  height: 30px;
+}
+.alert p{
+  color: #fff;
+  font-size: 16dp;
 }
 </style>
