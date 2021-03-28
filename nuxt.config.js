@@ -30,7 +30,7 @@ export default {
       {
         hid: 'og:image:alt',
         property: 'og:image:alt',
-        content: 'دليل مبرمج'
+        content: 'كل الأخبار'
       },
       {
         hid: 'twitter:image',
@@ -60,7 +60,8 @@ export default {
     '@nuxtjs/eslint-module',
     '@nuxtjs/vuetify',
     '@nuxtjs/pwa',
-    '@nuxtjs/google-analytics'
+    '@nuxtjs/google-analytics',
+    '@nuxtjs/color-mode'
 
   ],
   vuetify: {

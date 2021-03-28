@@ -1,9 +1,15 @@
 <template>
   <div>
     <div class="header">
-      <v-banner>{{ $t('news_new') }}</v-banner>
+      <v-banner>
+        <div class="navbar">
+          <img v-on:click="mo()" v-if="$colorMode.value=='light'" src="../assets/moon-light.svg" alt="" srcset="">
+          <img v-on:click="mo()" v-if="$colorMode.value=='dark'" src="../assets/moon-night.svg" alt="" srcset="">
+          <h1 class="nav">{{ $t('news_new') }}</h1>
+        </div>
+      </v-banner>
       <div class="alert">
-        <img src="../static/icon-alert.svg" alt="">
+        <img class="ic" src="../static/icon-alert.svg" alt="">
         <p> {{$t('alert')}} </p>
       </div>
     </div>
@@ -13,7 +19,29 @@
   </div>
 </template>
 
+<script>
+export default {
+  data () {
+    return {
+    }
+  },
+  methods: {
+    mo () {
+      if (this.$colorMode.value === 'light') {
+        this.$colorMode.value = 'dark'
+      } else if (this.$colorMode.value === 'dark') {
+        this.$colorMode.value = 'light'
+      }
+    }
+  }
+}
+</script>
 <style>
+.navbar{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
 html {
 
   font-family: 'Tajawal', sans-serif;
@@ -66,7 +94,6 @@ html {
 }
 .content{
   width: 400px;
-
 }
 @font-face{
   font-family: 'Tajawal';
@@ -85,9 +112,38 @@ html {
 .alert img{
   width: 30px;
   height: 30px;
+  margin: 3px;
 }
 .alert p{
   color: #fff;
   font-size: 16dp;
 }
+.light-mode body{
+  background-color: #fff;
+  color: rgba(0,0,0,0.8);
+
+}
+.light-mode a{
+  color: #091a28;
+}
+.dark-mode body {
+  background-color: #091a28;
+}
+.dark-mode h1{
+  color: #fff;
+}
+
+.sepia-mode body {
+  background-color: #f1e7d0;
+  color: #433422;
+}
+.nav{
+  font-size: 18px;
+}
+.header img{
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+}
+
 </style>

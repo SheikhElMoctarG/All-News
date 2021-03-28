@@ -35,8 +35,19 @@ export default {
 </script>
 
 <style>
-a{
-    color: #2c3e50;
+body {
+  background-color: #fff;
+  color: rgba(0,0,0,0.8);
+}
+.dark-mode body {
+  background-color: #091a28;
+  color: #ebf4f1;
+}
+.dark-mode a{
+  color: #fff;
+}
+.dark-mode p h1{
+  color: #fff;
 }
 .container {
   margin: 0 auto;
