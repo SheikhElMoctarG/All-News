@@ -89,18 +89,18 @@ html {
   background-color: #35495e;
 }
 .header{
-  max-width: 640px;
+  width: 400px;
   text-align: center;
 }
 .content{
-  max-width: 640px;
+  width: 400px;
 }
 @font-face{
   font-family: 'Tajawal';
   src: url('../fonts/Tajawal.ttf') format('truetype');
 }
 .alert{
-  max-width: 640px;
+  width: 400px;
   height: 50px;
   background-color: orange;
   display: flex;
