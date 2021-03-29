@@ -12,6 +12,7 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1' },
       { hid: 'og:site_name', property: 'og:site_name', content: 'كل الأخبار' },
       { hid: 'og:type', property: 'og:type', content: 'website' },
+      { name: 'google-site-verification', content: 'iz4fckJeH3K7jRCDjICVmgRpjVAcWrK4LoK-79D9rGQ' },
       {
         hid: 'twitter:card',
         name: 'twitter:card',
