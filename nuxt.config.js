@@ -75,7 +75,17 @@ export default {
        'nuxt-i18n',
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    '@nuxtjs/sitemap'
   ],
+  sitemap: {
+    path: '/sitemap.xml',
+    hostname: 'https://all-news-mr.herokuapp.com',
+    lastmod: '2021-03-29',
+    gzip: true,
+    exclude: [
+      '/**'
+    ]
+  },
   googleAnalytics: {
     id: process.env.GOOGLE_ANALYTICS_ID || 'UA-193046179-2'
   },
