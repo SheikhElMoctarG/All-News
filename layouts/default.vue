@@ -132,6 +132,9 @@ html {
 .dark-mode h1{
   color: #fff;
 }
+.dark-mode span{
+  background-color: #34495e;
+}
 
 .sepia-mode body {
   background-color: #f1e7d0;
