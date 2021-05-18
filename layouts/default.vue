@@ -13,6 +13,13 @@
         <p> {{$t('alert')}} </p>
       </div>
     </div>
+    <ul>
+     <li>Hhhh2</li>
+     <li>Hhhh2</li>
+     <li>Hhhh2</li>
+     <li>Hhhh2</li>
+     <li>Hhhh2</li>
+    </ul>
     <div class="content">
       <Nuxt />
     </div>
